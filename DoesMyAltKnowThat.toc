@@ -1,0 +1,29 @@
+## Interface: 120001, 120000, 110207
+## Title: Does My Alt Know That?
+## Notes: Should I send that recipe to my alt?
+## Version: v12
+## Author: Kemayo
+## eMail: kemayo at gmail dot com
+## X-Category: Professions
+## X-Donate: PayPal:kemayo AT gmail DOT com
+## X-Curse-Project-ID: 86663
+
+## SavedVariables: DoesMyAltKnowThatDB
+## SavedVariablesPerCharacter: DoesMyAltKnowThatDBPC
+
+## OptionalDeps: tekDebug, tekErr
+## X-Embeds: LibStub, CallbackHandler-1.0, LibDataBroker-1.1, tekKonfig
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+## X-LoadOn-Slash: /doesmyaltknowthat
+
+embeds.xml
+
+template\Database.lua
+template\UtilityFunctions.lua
+template\EventDispatcher.lua
+template\Module.lua
+
+# the core
+item_spell_map.lua
+core.lua
