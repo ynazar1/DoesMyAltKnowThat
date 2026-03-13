@@ -144,7 +144,7 @@ function core:OnTooltipSetItem(tooltip, data)
                 r, g, b = GREEN_FONT_COLOR.r, GREEN_FONT_COLOR.g, GREEN_FONT_COLOR.b
             elseif known == 0 then
                 left = recipetype
-                right = ("%d of %d Learn"):format(total, total)
+                right = ("%d of %d Unknown"):format(total, total)
                 r, g, b = RED_FONT_COLOR.r, RED_FONT_COLOR.g, RED_FONT_COLOR.b
             else
                 left = recipetype
