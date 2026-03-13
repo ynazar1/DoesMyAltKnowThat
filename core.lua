@@ -138,16 +138,14 @@ function core:OnTooltipSetItem(tooltip, data)
         if total > 0 then
             local left, right
             local r, g, b = NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b
+            left = recipetype
             if known == total then
-                left = recipetype
                 right = "Already Known"
                 r, g, b = GREEN_FONT_COLOR.r, GREEN_FONT_COLOR.g, GREEN_FONT_COLOR.b
             elseif known == 0 then
-                left = recipetype
                 right = ("%d of %d Unknown"):format(total, total)
                 r, g, b = RED_FONT_COLOR.r, RED_FONT_COLOR.g, RED_FONT_COLOR.b
             else
-                left = recipetype
                 right = ("%d of %d Partial"):format(total - known, total)
                 r, g, b = 1, 0.82, 0  -- yellow
             end
